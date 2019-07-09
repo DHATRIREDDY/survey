@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'survey3';
+export class AppComponent{
+  router: any;
+  
+  
+  next(): void {
+    this.router.navigateByUrl('comp1');
+
+}
 }
